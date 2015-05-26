@@ -1,7 +1,6 @@
-
 var person = {
-  name: 'Trini',
-  location: 'Atlanta'
+    name: 'Trini',
+    location: 'Atlanta'
 }
 
 var templateString = $('#personFormat').text();
@@ -59,5 +58,3 @@ console.log(finalHTML);
 // }
 
 // formBuilder(form1);
-
-
