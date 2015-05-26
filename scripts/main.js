@@ -1,3 +1,24 @@
+
+var person = {
+  name: 'Trini',
+  location: 'Atlanta'
+}
+
+var templateString = 'Hi, my name is <%= name %> and I am from <%= location %>';
+
+var templateFunction = _.template(templateString);
+
+var finalHTML = templateFunction(person);
+
+console.log(finalHTML);
+
+
+
+
+
+
+
+
 var form1 = [
   { type: 'text', label: 'First Name' },
   { type: 'text', label: 'Last Name' },
@@ -21,7 +42,7 @@ function formBuilder (data) {
 
       formHTML += '<label>' + elem.label + '</label>';
       formHTML += '<input type="' + elem.type + '" />';
-      formHTML += '</br></br>';  
+      formHTML += '</br></br>';
 
     }
 
